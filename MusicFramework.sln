@@ -1,0 +1,47 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MusicFramework", "Music\MusicFramework.csproj", "{5277FBD6-A694-4978-B078-545E74A00AFA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Libraries", "Libraries", "{01B6E8BD-0737-40B0-A596-F36228A3C5CD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Debug", "Debug", "{18B71C0F-0DBB-497F-A8CD-C6AE558DEAAE}"
+	ProjectSection(SolutionItems) = preProject
+		Libraries\Debug\LostParticles.TicksEngine.dll = Libraries\Debug\LostParticles.TicksEngine.dll
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Release", "Release", "{37174B84-5BEC-4401-BCCC-5A572DD3B7A4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MusicPlayer", "MusicPlayer\MusicPlayer.csproj", "{0C44A74F-0194-47D5-8500-3D2D6A961E2A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{9D2EFBB5-8F23-4330-BD8D-42D8DC1E5826}"
+	ProjectSection(SolutionItems) = preProject
+		README.md = README.md
+		WhatsNew.txt = WhatsNew.txt
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5277FBD6-A694-4978-B078-545E74A00AFA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5277FBD6-A694-4978-B078-545E74A00AFA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5277FBD6-A694-4978-B078-545E74A00AFA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5277FBD6-A694-4978-B078-545E74A00AFA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0C44A74F-0194-47D5-8500-3D2D6A961E2A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0C44A74F-0194-47D5-8500-3D2D6A961E2A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0C44A74F-0194-47D5-8500-3D2D6A961E2A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0C44A74F-0194-47D5-8500-3D2D6A961E2A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{18B71C0F-0DBB-497F-A8CD-C6AE558DEAAE} = {01B6E8BD-0737-40B0-A596-F36228A3C5CD}
+		{37174B84-5BEC-4401-BCCC-5A572DD3B7A4} = {01B6E8BD-0737-40B0-A596-F36228A3C5CD}
+	EndGlobalSection
+EndGlobal

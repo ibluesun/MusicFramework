@@ -1,0 +1,36 @@
+﻿There is a difference between midi message 
+
+and midi event
+
+midi message is sent to the device execute it
+
+however to control the messages that is send we have to make some sort of time
+
+this time is in the form of delta time
+
+in midi file
+
+each event contains  {delta time + midi message}
+-------------
+
+about midi event 0xFF  it is RESET  message   so that midi file reused this message to construct many
+meta messages
+
+my objective is to read the structure of the midi as it is using binary representaion.
+
+note: all things are big endian (motorolla)
+
+the class itself should hold its status code as attribute.
+
+I think Status code should be separated of data because in case of running status we can  have multiple channel messages without changing in status
+
+ok what about meta message {which is spreaded all over the track} ??!!
+
+Status code as structure.
+
+0xFF
+	|
+	|--- 00
+	|--- 01  text
+	
+

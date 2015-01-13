@@ -1,0 +1,109 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Song Tempo="180" xmlns="http://music.lostparticles.net/Song">
+  <Voice clef="C" meter="4/4" key="b!,e~,f#">
+    
+    <Note Tone="G" Octave="4" Duration="4/4" />
+    
+    <Repeat Times="1">
+      <Note Tone="G" Octave="4" Duration="3/8"/>
+      <Note Tone="A" Octave="4" Duration="1/8"/>
+      <Note Tone="F" Octave="4" Duration="3/16"/>
+      <Note Tone="E" Octave="4" Duration="1/16"/>
+      <Note Tone="D" Octave="4" Duration="1/8"/>
+      <Note Tone="E" Octave="4" Duration="1/8"/>
+    </Repeat>
+    
+    <Note Tone="F" Octave="4" Duration="4/4"/>
+    <Note Tone="F" Octave="4" Duration="3/8"/>
+    <Note Tone="G" Octave="4" Duration="1/8"/>
+    <Note Tone="E" Octave="4" Duration="3/16"/>
+    <Note Tone="D" Octave="4" Duration="1/16"/>
+    <Note Tone="C" Octave="4" Duration="1/8"/>
+    <Note Tone="D" Octave="4" Duration="1/8"/>
+    
+    <Repeat Times="1">
+      <Note Tone="E" Octave="4" Duration="1/4"/>
+      <Note Tone="G" Octave="4" Duration="1/8"/>
+      <Note Tone="F" Octave="4" Duration="1/16"/>
+      <Note Tone="E" Octave="4" Duration="1/16"/>
+      <Note Tone="F" Octave="4" Duration="1/8"/>
+      <Note Tone="E" Octave="4" Duration="1/16"/>
+      <Note Tone="D" Octave="4" Duration="1/16"/>
+      <Note Tone="E" Octave="4" Duration="1/8"/>
+      <Note Tone="D" Octave="4" Duration="1/16"/>
+      <Note Tone="C" Octave="4" Duration="1/16"/>
+    </Repeat>
+    
+    <Repeat Times="1">
+      <Note Tone="D" Octave="4" Duration="1/4"/>
+      <Note Tone="C" Octave="4" Duration="1/12"/>
+      <Note Tone="B&lt;" Octave="4" Duration="1/12" />
+      <Note Tone="C" Octave="4" Duration="1/12"/>
+      <Note Tone="D" Octave="4" Duration="3/16"/>
+      <Note Tone="C" Octave="4" Duration="1/16"/>
+      <Note Tone="B&lt;" Octave="4" Duration="1/4"/>
+    </Repeat>
+
+    <Note Tone="F" Octave="4" Duration="4/4"/>
+
+    <Note Tone="F" Octave="4" Duration="3/8"/>
+    <Note Tone="G" Octave="4" Duration="1/8"/>
+    <Note Tone="E" Octave="4" Duration="3/16"/>
+    <Note Tone="D" Octave="4" Duration="1/16"/>
+    <Note Tone="C" Octave="4" Duration="1/8"/>
+    <Note Tone="D" Octave="4" Duration="1/8"/>
+
+    <Note Tone="E" Octave="4" Duration="4/4" />
+
+    <Repeat Times="1">
+      <Note Tone="E" Octave="4" Duration="3/8"/>
+      <Note Tone="F" Octave="4" Duration="1/8"/>
+      <Note Tone="D" Octave="4" Duration="3/16"/>
+      <Note Tone="C" Octave="4" Duration="1/16"/>
+      <Note Tone="B&lt;" Octave="4" Duration="1/8"/>
+      <Note Tone="C" Octave="4" Duration="1/8"/>
+    </Repeat>
+
+    <Repeat Times="1">
+      <Note Tone="D" Octave="4" Duration="1/8"/>
+      <Note Tone="D" Octave="4" Duration="1/4"/>
+      <Note Tone="B&lt;" Octave="4" Duration="1/8"/>
+      <Note Tone="C" Octave="4" Duration="1/8"/>
+      <Note Tone="D" Octave="4" Duration="1/8"/>
+      <Note Tone="C" Octave="4" Duration="1/8"/>
+      <Note Tone="B&lt;" Octave="4" Duration="1/8"/>
+    </Repeat>
+
+    <Repeat Times="1">
+      <Note Tone="D" Octave="4" Duration="1/8"/>
+      <Note Tone="D" Octave="4" Duration="1/4"/>
+      <Note Tone="B&lt;" Octave="4" Duration="1/8"/>
+      <Note Tone="C" Octave="4" Duration="1/8"/>
+      <Note Tone="D" Octave="4" Duration="1/8"/>
+      <Note Tone="B&lt;" Octave="4" Duration="1/8"/>
+      <Note Tone="C" Octave="4" Duration="1/8"/>
+    </Repeat>
+    <Repeat Times="1">
+      <Note Tone="A&lt;" Octave="4" Duration="1/4"/>
+      <Note Tone="B&lt;" Octave="4" Duration="1/12"/>
+      <Note Tone="C" Octave="4" Duration="1/12"/>
+      <Note Tone="D" Octave="4" Duration="1/12"/>
+      <Note Tone="B&lt;" Octave="4" Duration="1/12"/>
+      <Note Tone="C" Octave="4" Duration="1/12"/>
+      <Note Tone="D" Octave="4" Duration="1/12"/>
+      <Note Tone="D" Octave="4" Duration="3/16"/>
+      <Note Tone="C" Octave="4" Duration="1/16"/>
+    </Repeat>
+
+    <Repeat Times="1">
+      <Note Tone="B&lt;" Octave="4" Duration="1/8"/>
+      <Note Tone="G" Octave="4" Duration="1/8"/>
+      <Note Tone="B" Octave="4" Duration="1/8"/>
+      <Note Tone="B" Octave="4" Duration="1/8"/>
+      <Note Tone="A" Octave="4" Duration="1/8"/>
+      <Note Tone="B" Octave="4" Duration="1/8"/>
+      <Note Tone="C>" Octave="4" Duration="1/4"/>
+    </Repeat>
+    
+  </Voice>
+</Song>

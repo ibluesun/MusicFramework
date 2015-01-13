@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Song Tempo="130">
+  <Voice clef="trebel" meter="4/4" key="b!,e~,f#">
+
+    <Repeat Times="1">
+      <Note Tone="B&lt;" Octave="4" Duration="1/8"/>
+      <Note Tone="G" Octave="4" Duration="1/8"/>
+      <Note Tone="B" Octave="4" Duration="1/8"/>
+      <Note Tone="B" Octave="4" Duration="1/8"/>
+      <Note Tone="A" Octave="4" Duration="1/8"/>
+      <Note Tone="B" Octave="4" Duration="1/8"/>
+      <Note Tone="C>" Octave="4" Duration="1/4"/>
+    </Repeat>
+
+  </Voice>
+</Song>

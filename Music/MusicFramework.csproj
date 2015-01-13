@@ -1,0 +1,188 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <MinimumVisualStudioVersion>12.0</MinimumVisualStudioVersion>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{5277FBD6-A694-4978-B078-545E74A00AFA}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>LostParticles.MusicFramework</RootNamespace>
+    <AssemblyName>LostParticles.MusicFramework</AssemblyName>
+    <DefaultLanguage>en-US</DefaultLanguage>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{786C830F-07A1-408B-BD7F-6EE04809D6DB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <TargetFrameworkProfile>Profile151</TargetFrameworkProfile>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <!-- A reference to the entire .NET Framework is automatically included -->
+    <Content Include="Documentation\Chord Note.txt" />
+    <Content Include="Documentation\Midi_Notes.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FractionNumber.cs" />
+    <Compile Include="Midi\Instruments.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Midi\IO\IMidiOutputDevice.cs" />
+    <Compile Include="Midi\IO\MidiEvent.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Midi\IO\MidiFileStream.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Midi\IO\MidiHeader.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Midi\IO\MidiTrack.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Midi\IO\MidiTrackStream.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Midi\Messages\Channel\ChannelAftertouch.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Midi\Messages\Channel\ControlChange.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Midi\Messages\Channel\KeyAftertouch.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Midi\Messages\Channel\NoteOff.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Midi\Messages\Channel\NoteOn.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Midi\Messages\Channel\PitchBend.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Midi\Messages\Channel\ProgramChange.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Midi\Messages\Common\ChannelMessage.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Midi\Messages\Common\MetaMessage.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Midi\Messages\Common\MidiAttributes.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Midi\Messages\Common\MidiMessage.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Midi\Messages\Common\SystemExclusiveMessage.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Midi\Messages\Meta\Copyright.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Midi\Messages\Meta\CuePoint.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Midi\Messages\Meta\DevicePortName.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Midi\Messages\Meta\EndOfTrack.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Midi\Messages\Meta\Instrument.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Midi\Messages\Meta\KeySignature.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Midi\Messages\Meta\Lyric.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Midi\Messages\Meta\Marker.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Midi\Messages\Meta\MidiChannel.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Midi\Messages\Meta\MidiPort.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Midi\Messages\Meta\ProgramName.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Midi\Messages\Meta\ProprietaryEvent.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Midi\Messages\Meta\SequenceName.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Midi\Messages\Meta\SequenceNumber.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Midi\Messages\Meta\SMPTEOffset.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Midi\Messages\Meta\Tempo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Midi\Messages\Meta\Text.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Midi\Messages\Meta\TimeSignature.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Midi\MidiNote.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Midi\TickMidiEvent.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MusicScale.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Song\Chord.cs" />
+    <Compile Include="Song\IVoiceNote.cs" />
+    <Compile Include="Song\Note.cs" />
+    <Compile Include="Song\Repeat.cs" />
+    <Compile Include="Song\Song.cs" />
+    <Compile Include="Song\SongMidi.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Song\SongMML.cs" />
+    <Compile Include="Song\SongXML.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Song\Voice.cs" />
+    <Compile Include="Song\SongTickEvent.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="LostParticles.TicksEngine">
+      <HintPath>..\Libraries\Debug\LostParticles.TicksEngine.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

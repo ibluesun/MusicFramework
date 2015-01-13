@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+
+<Song Tempo="240" xmlns="http://www.lostparticles.net">
+  <Voice clef="trebel" meter="4/4">
+    <Repeat Times="2">
+      <Note Tone="C" Octave="4" Duration="1/4"/>
+      <Note Tone="D" Octave="4" Duration="1/4"/>
+      <Note Tone="E" Octave="4" Duration="1/4"/>
+      <Note Tone="C" Octave="4" Duration="1/4"/>
+    </Repeat>
+
+    <Repeat Times="2">
+      <Note Tone="E" Octave="4" Duration="1/4"/>
+      <Note Tone="F" Octave="4" Duration="1/4"/>
+      <Note Tone="G" Octave="4" Duration="2/4"/>
+    </Repeat>
+
+    <Repeat Times="2">
+      <Note Tone="G" Octave="4" Duration="1/8"/>
+      <Note Tone="A" Octave="4" Duration="1/8"/>
+      <Note Tone="G" Octave="4" Duration="1/8"/>
+      <Note Tone="F" Octave="4" Duration="1/8"/>
+      <Note Tone="E" Octave="4" Duration="1/4"/>
+      <Note Tone="C" Octave="4" Duration="1/4"/>
+    </Repeat>
+
+    <Repeat Times="2">
+      <Note Tone="C*" Octave="4" Duration="1/4"/>
+      <Note Tone="G" Octave="3" Duration="1/4"/>
+      <Chord>
+        <Note Tone="C*" Octave="4" Duration="2/4"/>
+        <Note Tone="C*>" Octave="4" Duration="2/4"/>
+      </Chord>
+    </Repeat>
+  </Voice>
+
+</Song>

@@ -1,0 +1,4 @@
+﻿The Chord Note is a special note that the musician hold two notes at the same time 
+
+to handle the chord note it should only contain notes and should be played together
+
