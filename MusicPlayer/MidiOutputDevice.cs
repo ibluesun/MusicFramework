@@ -1,4 +1,5 @@
 ﻿using LostParticles.MusicFramework.Midi.IO;
+using LostParticles.MusicFramework.Midi.Messages.Common;
 using System;
 using System.Runtime.InteropServices;
 
@@ -174,6 +175,21 @@ namespace MusicPlayer
 
 
         }
+
+
+        public void Send(ChannelMessage channelMessage)
+        {
+
+            if (channelMessage.Length == 2)
+                Send(channelMessage.Status, channelMessage[1]);
+            else if (channelMessage.Length == 3)
+                Send(channelMessage.Status, channelMessage[1], channelMessage[2]);
+            else if (channelMessage.Length == 4)
+                Send(channelMessage.Status, channelMessage[1], channelMessage[2], channelMessage[3]);
+            else
+                throw new NotImplementedException("Bytes exceeds the allowable midi data to be sent.");
+        }
+
 
         public void Send(byte status, byte data_1)
         {

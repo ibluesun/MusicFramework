@@ -1,2 +1,9 @@
+[MusicPlayer]
+- Added XAudio and AudioSynthesis dll from http://csharpsynthproject.codeplex.com
+  so I made XMidiSynthesizer that use the previous dll to produce midi from sound file
+  {it seems I have a bug there that I couldn't resolve, i decorated with try-catch for now}
+
+
+
 [MusicFramework]
 - First commit to the repository.

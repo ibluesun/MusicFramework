@@ -1,4 +1,5 @@
-﻿using System;
+﻿using LostParticles.MusicFramework.Midi.Messages.Common;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,6 +9,8 @@ namespace LostParticles.MusicFramework.Midi.IO
 {
     public interface IMidiOutputDevice
     {
+        void Send(ChannelMessage channelMessage);
+
         void Send(byte status, byte data_1);
         void Send(byte status, byte data_1, byte data_2);
         void Send(byte status, byte data_1, byte data_2, byte data_3);

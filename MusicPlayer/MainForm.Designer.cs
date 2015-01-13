@@ -43,6 +43,8 @@
             this.MSongFileDialog = new System.Windows.Forms.OpenFileDialog();
             this.MSongFileTextBox = new System.Windows.Forms.TextBox();
             this.MSongPlayButton = new System.Windows.Forms.Button();
+            this.radioButton1 = new System.Windows.Forms.RadioButton();
+            this.radioButton2 = new System.Windows.Forms.RadioButton();
             this.statusStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -50,16 +52,16 @@
             // 
             this.MMLTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.MMLTextBox.Location = new System.Drawing.Point(76, 15);
+            this.MMLTextBox.Location = new System.Drawing.Point(76, 75);
             this.MMLTextBox.Name = "MMLTextBox";
-            this.MMLTextBox.Size = new System.Drawing.Size(477, 20);
+            this.MMLTextBox.Size = new System.Drawing.Size(549, 20);
             this.MMLTextBox.TabIndex = 0;
             this.MMLTextBox.Text = "C D E F G A B C>";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(12, 18);
+            this.label1.Location = new System.Drawing.Point(12, 78);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(28, 13);
             this.label1.TabIndex = 1;
@@ -68,7 +70,7 @@
             // MMLPlayButton
             // 
             this.MMLPlayButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.MMLPlayButton.Location = new System.Drawing.Point(478, 41);
+            this.MMLPlayButton.Location = new System.Drawing.Point(550, 101);
             this.MMLPlayButton.Name = "MMLPlayButton";
             this.MMLPlayButton.Size = new System.Drawing.Size(75, 23);
             this.MMLPlayButton.TabIndex = 2;
@@ -82,9 +84,9 @@
             this.toolStripStatusLabel1,
             this.toolStripStatusLabel2,
             this.toolStripStatusLabel3});
-            this.statusStrip1.Location = new System.Drawing.Point(0, 222);
+            this.statusStrip1.Location = new System.Drawing.Point(0, 326);
             this.statusStrip1.Name = "statusStrip1";
-            this.statusStrip1.Size = new System.Drawing.Size(565, 22);
+            this.statusStrip1.Size = new System.Drawing.Size(637, 22);
             this.statusStrip1.TabIndex = 3;
             this.statusStrip1.Text = "statusStrip1";
             // 
@@ -110,9 +112,9 @@
             // 
             this.MidiFileTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.MidiFileTextBox.Location = new System.Drawing.Point(76, 87);
+            this.MidiFileTextBox.Location = new System.Drawing.Point(76, 147);
             this.MidiFileTextBox.Name = "MidiFileTextBox";
-            this.MidiFileTextBox.Size = new System.Drawing.Size(477, 20);
+            this.MidiFileTextBox.Size = new System.Drawing.Size(549, 20);
             this.MidiFileTextBox.TabIndex = 5;
             this.MidiFileTextBox.Text = "Content\\RaisingFight.mid";
             // 
@@ -125,7 +127,7 @@
             // MidiFileLinkLabel
             // 
             this.MidiFileLinkLabel.AutoSize = true;
-            this.MidiFileLinkLabel.Location = new System.Drawing.Point(12, 90);
+            this.MidiFileLinkLabel.Location = new System.Drawing.Point(12, 150);
             this.MidiFileLinkLabel.Name = "MidiFileLinkLabel";
             this.MidiFileLinkLabel.Size = new System.Drawing.Size(44, 13);
             this.MidiFileLinkLabel.TabIndex = 7;
@@ -136,7 +138,7 @@
             // MidiPlayButton
             // 
             this.MidiPlayButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.MidiPlayButton.Location = new System.Drawing.Point(478, 113);
+            this.MidiPlayButton.Location = new System.Drawing.Point(550, 173);
             this.MidiPlayButton.Name = "MidiPlayButton";
             this.MidiPlayButton.Size = new System.Drawing.Size(75, 23);
             this.MidiPlayButton.TabIndex = 8;
@@ -147,7 +149,7 @@
             // MSongFileLinkLabel
             // 
             this.MSongFileLinkLabel.AutoSize = true;
-            this.MSongFileLinkLabel.Location = new System.Drawing.Point(12, 163);
+            this.MSongFileLinkLabel.Location = new System.Drawing.Point(12, 223);
             this.MSongFileLinkLabel.Name = "MSongFileLinkLabel";
             this.MSongFileLinkLabel.Size = new System.Drawing.Size(58, 13);
             this.MSongFileLinkLabel.TabIndex = 9;
@@ -165,16 +167,16 @@
             // 
             this.MSongFileTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.MSongFileTextBox.Location = new System.Drawing.Point(76, 160);
+            this.MSongFileTextBox.Location = new System.Drawing.Point(76, 220);
             this.MSongFileTextBox.Name = "MSongFileTextBox";
-            this.MSongFileTextBox.Size = new System.Drawing.Size(477, 20);
+            this.MSongFileTextBox.Size = new System.Drawing.Size(549, 20);
             this.MSongFileTextBox.TabIndex = 10;
             this.MSongFileTextBox.Text = "Content\\Sama3y Bayati (3erian).msong";
             // 
             // MSongPlayButton
             // 
             this.MSongPlayButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.MSongPlayButton.Location = new System.Drawing.Point(478, 186);
+            this.MSongPlayButton.Location = new System.Drawing.Point(550, 246);
             this.MSongPlayButton.Name = "MSongPlayButton";
             this.MSongPlayButton.Size = new System.Drawing.Size(75, 23);
             this.MSongPlayButton.TabIndex = 11;
@@ -182,11 +184,35 @@
             this.MSongPlayButton.UseVisualStyleBackColor = true;
             this.MSongPlayButton.Click += new System.EventHandler(this.MSongPlayButton_Click);
             // 
+            // radioButton1
+            // 
+            this.radioButton1.AutoSize = true;
+            this.radioButton1.Checked = true;
+            this.radioButton1.Location = new System.Drawing.Point(15, 12);
+            this.radioButton1.Name = "radioButton1";
+            this.radioButton1.Size = new System.Drawing.Size(124, 17);
+            this.radioButton1.TabIndex = 12;
+            this.radioButton1.TabStop = true;
+            this.radioButton1.Text = "Windows Midi Device";
+            this.radioButton1.UseVisualStyleBackColor = true;
+            // 
+            // radioButton2
+            // 
+            this.radioButton2.AutoSize = true;
+            this.radioButton2.Location = new System.Drawing.Point(174, 12);
+            this.radioButton2.Name = "radioButton2";
+            this.radioButton2.Size = new System.Drawing.Size(154, 17);
+            this.radioButton2.TabIndex = 13;
+            this.radioButton2.Text = "XAudioMidi with sound font";
+            this.radioButton2.UseVisualStyleBackColor = true;
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(565, 244);
+            this.ClientSize = new System.Drawing.Size(637, 348);
+            this.Controls.Add(this.radioButton2);
+            this.Controls.Add(this.radioButton1);
             this.Controls.Add(this.MSongPlayButton);
             this.Controls.Add(this.MSongFileTextBox);
             this.Controls.Add(this.MSongFileLinkLabel);
@@ -199,6 +225,7 @@
             this.Controls.Add(this.MMLTextBox);
             this.Name = "MainForm";
             this.Text = "Music Player";
+            this.Load += new System.EventHandler(this.MainForm_Load);
             this.statusStrip1.ResumeLayout(false);
             this.statusStrip1.PerformLayout();
             this.ResumeLayout(false);
@@ -223,6 +250,8 @@
         private System.Windows.Forms.OpenFileDialog MSongFileDialog;
         private System.Windows.Forms.TextBox MSongFileTextBox;
         private System.Windows.Forms.Button MSongPlayButton;
+        private System.Windows.Forms.RadioButton radioButton1;
+        private System.Windows.Forms.RadioButton radioButton2;
     }
 }
 

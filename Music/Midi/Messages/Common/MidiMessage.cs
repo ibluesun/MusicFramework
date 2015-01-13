@@ -7,7 +7,6 @@ namespace LostParticles.MusicFramework.Midi.Messages.Common
 {
     /// <summary>
     /// MidiMessage Class represent a midi message that accept two or more bytes.
-    /// 
     /// </summary>
     public class MidiMessage
     {

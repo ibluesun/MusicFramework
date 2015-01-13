@@ -174,7 +174,7 @@
   </ItemGroup>
   <ItemGroup>
     <Reference Include="LostParticles.TicksEngine">
-      <HintPath>..\Libraries\Debug\LostParticles.TicksEngine.dll</HintPath>
+      <HintPath>..\Libraries\Release\LostParticles.TicksEngine.dll</HintPath>
     </Reference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />

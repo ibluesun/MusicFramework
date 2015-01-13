@@ -2,6 +2,7 @@
 using LostParticles.MusicFramework.Midi.IO;
 using LostParticles.MusicFramework.Midi.Messages.Channel;
 using LostParticles.MusicFramework.Song;
+using LostParticles.MusicFramework.XAudioMidi;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -18,12 +19,13 @@ namespace MusicPlayer
 {
     public partial class MainForm : Form
     {
+
         public MainForm()
         {
             InitializeComponent();
+
         }
 
-        private MidiOutputDevice SystemOutputDevice = new MidiOutputDevice(0);
 
         #region playing note data directly
 
@@ -72,6 +74,32 @@ namespace MusicPlayer
         #endregion
 
 
+
+        private MidiOutputDevice SystemOutputDevice = new MidiOutputDevice(0);
+
+        private XMidiSynthesizer XSynthDevice = new XMidiSynthesizer("4mbgm_plus12.sf2");
+
+
+
+        IMidiOutputDevice CurrentMidiDevice
+        {
+            get
+            {
+                if (radioButton1.Checked)
+                    return SystemOutputDevice;
+                else
+                    return XSynthDevice;
+            }
+        }
+        private void MainForm_Load(object sender, EventArgs e)
+        {
+
+            XSynthDevice.TurnOn();
+
+        }
+
+
+
         private void MMLPlayButton_Click(object sender, EventArgs e)
         {
             Song sng = new Song(120);
@@ -81,7 +109,7 @@ namespace MusicPlayer
             //var player = sng[0].GetWindowsPlayer(SystemOutputDevice);
             //player.Play();
 
-            sng.GetPlayer(SystemOutputDevice).PlayAsynchronus();
+            sng.GetPlayer(CurrentMidiDevice).PlayAsynchronus();
         }
 
         private void MidiFileLinkLabel_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
@@ -99,7 +127,7 @@ namespace MusicPlayer
 
             MidiFileStream mfs = new MidiFileStream(File.OpenRead(MidiFileTextBox.Text));
 
-            var player = mfs.GetPlayer(SystemOutputDevice);
+            var player = mfs.GetPlayer(CurrentMidiDevice);
 
             player.PlayAsynchronus();
 
@@ -112,7 +140,7 @@ namespace MusicPlayer
 
             Song sng = Song.SongFromXmlDocument(xd);
 
-            sng.GetPlayer(SystemOutputDevice).PlayAsynchronus();
+            sng.GetPlayer(CurrentMidiDevice).PlayAsynchronus();
         }
 
         private void MSongFileLinkLabel_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
@@ -125,5 +153,8 @@ namespace MusicPlayer
             }
 
         }
+
+
+
     }
 }

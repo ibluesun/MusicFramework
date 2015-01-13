@@ -27,5 +27,32 @@ namespace LostParticles.MusicFramework.Midi.Messages.Common
                 Status = (byte)(Status | value);
             }
         }
+
+        public int Command
+        {
+            get
+            {
+                return Status & 0xF0;    // command is in the high bits so we multiply it by 1111 0000
+            }
+        }
+
+        public string HexCommand
+        {
+            get
+            {
+                return Command.ToString("x");
+            }
+        }
+
+
+        public static int StatusCommand(byte status)
+        {
+            return status & 0xF0;
+        }
+
+        public static int StatusChannel(byte status)
+        {
+            return status & DataMask & CommandMask;
+        }
     }
 }
