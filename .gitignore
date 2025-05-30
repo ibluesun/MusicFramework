@@ -31,3 +31,6 @@ packages/
 !Libraries/*
 !Libraries/Debug/*
 !Libraries/Release/*
+/.vs/MusicFramework
+/MusicFrameworkTestingProject/.vs
+/MusicPlayer/.vs
