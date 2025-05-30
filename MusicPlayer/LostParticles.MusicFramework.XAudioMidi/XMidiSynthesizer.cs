@@ -12,7 +12,7 @@ using System.Threading.Tasks;
 
 namespace LostParticles.MusicFramework.XAudioMidi
 {
-    public class XMidiSynthesizer : IMidiOutputDevice
+    public class XMidiSynthesizer : IMidiOutputDevice, IDisposable
     {
         Synthesizer MainSynth;
 
@@ -46,11 +46,6 @@ namespace LostParticles.MusicFramework.XAudioMidi
 
         }
 
-        ~XMidiSynthesizer()
-        {
-            TurnOff();
-            xaudio.Dispose();
-        }
 
         void MainSourceVoice_BufferEnd(IntPtr obj)
         {
@@ -95,6 +90,7 @@ namespace LostParticles.MusicFramework.XAudioMidi
 
 
         bool TurnedOn = false;
+        private bool disposedValue;
 
         public void TurnOn()
         {
@@ -139,6 +135,40 @@ namespace LostParticles.MusicFramework.XAudioMidi
         public void Send(byte status, byte data_1, byte data_2, byte data_3)
         {
             throw new NotImplementedException();
+        }
+
+        protected virtual void Dispose(bool disposing)
+        {
+            if (!disposedValue)
+            {
+                if (disposing)
+                {
+                    // TODO: dispose managed state (managed objects)
+                }
+
+                // TODO: free unmanaged resources (unmanaged objects) and override finalizer
+                TurnOff();
+                xaudio.Dispose();
+
+                // TODO: set large fields to null
+                disposedValue = true;
+            }
+        }
+
+
+        ~XMidiSynthesizer()
+        {
+            // Do not change this code. Put cleanup code in 'Dispose(bool disposing)' method
+            Dispose(disposing: false);
+        }
+
+
+
+        public void Dispose()
+        {
+            // Do not change this code. Put cleanup code in 'Dispose(bool disposing)' method
+            Dispose(disposing: true);
+            GC.SuppressFinalize(this);
         }
     }
 }

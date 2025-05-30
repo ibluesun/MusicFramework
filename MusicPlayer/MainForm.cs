@@ -77,7 +77,7 @@ namespace MusicPlayer
 
         private MidiOutputDevice SystemOutputDevice = new MidiOutputDevice(0);
 
-        private XMidiSynthesizer XSynthDevice = new XMidiSynthesizer("4mbgm_plus12.sf2");
+        private XMidiSynthesizer XSynthDevice;  //  = new XMidiSynthesizer("4mbgm_plus12.sf2");
 
 
 
@@ -85,16 +85,45 @@ namespace MusicPlayer
         {
             get
             {
-                if (radioButton1.Checked)
+                if (MidiDeviceComboBox.SelectedIndex == 0)
                     return SystemOutputDevice;
                 else
                     return XSynthDevice;
             }
         }
+
+        private void MidiDeviceComboBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (XSynthDevice != null)
+                XSynthDevice.Dispose();
+
+            if (MidiDeviceComboBox.SelectedIndex == 0)
+            {
+            }
+            else
+            {
+                XSynthDevice = new XMidiSynthesizer(Application.StartupPath + "\\SoundFonts\\" + MidiDeviceComboBox.SelectedItem);
+                XSynthDevice.TurnOn();
+            }
+        }
+
+
         private void MainForm_Load(object sender, EventArgs e)
         {
+            var d = new DirectoryInfo(Application.StartupPath + "\\SoundFonts");
+            var sf2s = d.GetFiles("*.sf2");
 
-            XSynthDevice.TurnOn();
+            foreach (var item in sf2s)
+            {
+                MidiDeviceComboBox.Items.Add(item.Name);
+            }
+
+            MidiDeviceComboBox.Items.Insert(0, "Windows Midi Device");
+
+            MidiDeviceComboBox.SelectedIndex = 0;
+
+            
+            //XSynthDevice.TurnOn();
 
         }
 
@@ -153,8 +182,6 @@ namespace MusicPlayer
             }
 
         }
-
-
 
     }
 }

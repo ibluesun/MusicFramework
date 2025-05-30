@@ -43,8 +43,8 @@
             this.MSongFileDialog = new System.Windows.Forms.OpenFileDialog();
             this.MSongFileTextBox = new System.Windows.Forms.TextBox();
             this.MSongPlayButton = new System.Windows.Forms.Button();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
+            this.MidiDeviceComboBox = new System.Windows.Forms.ComboBox();
+            this.label2 = new System.Windows.Forms.Label();
             this.statusStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -52,9 +52,9 @@
             // 
             this.MMLTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.MMLTextBox.Location = new System.Drawing.Point(76, 75);
+            this.MMLTextBox.Location = new System.Drawing.Point(96, 75);
             this.MMLTextBox.Name = "MMLTextBox";
-            this.MMLTextBox.Size = new System.Drawing.Size(549, 20);
+            this.MMLTextBox.Size = new System.Drawing.Size(529, 20);
             this.MMLTextBox.TabIndex = 0;
             this.MMLTextBox.Text = "C D E F G A B C>";
             // 
@@ -63,7 +63,7 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(12, 78);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(28, 13);
+            this.label1.Size = new System.Drawing.Size(31, 13);
             this.label1.TabIndex = 1;
             this.label1.Text = "MML";
             // 
@@ -112,9 +112,9 @@
             // 
             this.MidiFileTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.MidiFileTextBox.Location = new System.Drawing.Point(76, 147);
+            this.MidiFileTextBox.Location = new System.Drawing.Point(96, 147);
             this.MidiFileTextBox.Name = "MidiFileTextBox";
-            this.MidiFileTextBox.Size = new System.Drawing.Size(549, 20);
+            this.MidiFileTextBox.Size = new System.Drawing.Size(529, 20);
             this.MidiFileTextBox.TabIndex = 5;
             this.MidiFileTextBox.Text = "Content\\RaisingFight.mid";
             // 
@@ -129,7 +129,7 @@
             this.MidiFileLinkLabel.AutoSize = true;
             this.MidiFileLinkLabel.Location = new System.Drawing.Point(12, 150);
             this.MidiFileLinkLabel.Name = "MidiFileLinkLabel";
-            this.MidiFileLinkLabel.Size = new System.Drawing.Size(44, 13);
+            this.MidiFileLinkLabel.Size = new System.Drawing.Size(45, 13);
             this.MidiFileLinkLabel.TabIndex = 7;
             this.MidiFileLinkLabel.TabStop = true;
             this.MidiFileLinkLabel.Text = "Midi File";
@@ -151,7 +151,7 @@
             this.MSongFileLinkLabel.AutoSize = true;
             this.MSongFileLinkLabel.Location = new System.Drawing.Point(12, 223);
             this.MSongFileLinkLabel.Name = "MSongFileLinkLabel";
-            this.MSongFileLinkLabel.Size = new System.Drawing.Size(58, 13);
+            this.MSongFileLinkLabel.Size = new System.Drawing.Size(60, 13);
             this.MSongFileLinkLabel.TabIndex = 9;
             this.MSongFileLinkLabel.TabStop = true;
             this.MSongFileLinkLabel.Text = "MSong File";
@@ -167,9 +167,9 @@
             // 
             this.MSongFileTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.MSongFileTextBox.Location = new System.Drawing.Point(76, 220);
+            this.MSongFileTextBox.Location = new System.Drawing.Point(96, 220);
             this.MSongFileTextBox.Name = "MSongFileTextBox";
-            this.MSongFileTextBox.Size = new System.Drawing.Size(549, 20);
+            this.MSongFileTextBox.Size = new System.Drawing.Size(529, 20);
             this.MSongFileTextBox.TabIndex = 10;
             this.MSongFileTextBox.Text = "Content\\Sama3y Bayati (3erian).msong";
             // 
@@ -184,35 +184,32 @@
             this.MSongPlayButton.UseVisualStyleBackColor = true;
             this.MSongPlayButton.Click += new System.EventHandler(this.MSongPlayButton_Click);
             // 
-            // radioButton1
+            // MidiDeviceComboBox
             // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Checked = true;
-            this.radioButton1.Location = new System.Drawing.Point(15, 12);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(124, 17);
-            this.radioButton1.TabIndex = 12;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "Windows Midi Device";
-            this.radioButton1.UseVisualStyleBackColor = true;
+            this.MidiDeviceComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.MidiDeviceComboBox.FormattingEnabled = true;
+            this.MidiDeviceComboBox.Location = new System.Drawing.Point(96, 12);
+            this.MidiDeviceComboBox.Name = "MidiDeviceComboBox";
+            this.MidiDeviceComboBox.Size = new System.Drawing.Size(529, 21);
+            this.MidiDeviceComboBox.TabIndex = 14;
+            this.MidiDeviceComboBox.SelectedIndexChanged += new System.EventHandler(this.MidiDeviceComboBox_SelectedIndexChanged);
             // 
-            // radioButton2
+            // label2
             // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(174, 12);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(154, 17);
-            this.radioButton2.TabIndex = 13;
-            this.radioButton2.Text = "XAudioMidi with sound font";
-            this.radioButton2.UseVisualStyleBackColor = true;
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(12, 15);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(63, 13);
+            this.label2.TabIndex = 15;
+            this.label2.Text = "Midi Device";
             // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(637, 348);
-            this.Controls.Add(this.radioButton2);
-            this.Controls.Add(this.radioButton1);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.MidiDeviceComboBox);
             this.Controls.Add(this.MSongPlayButton);
             this.Controls.Add(this.MSongFileTextBox);
             this.Controls.Add(this.MSongFileLinkLabel);
@@ -250,8 +247,8 @@
         private System.Windows.Forms.OpenFileDialog MSongFileDialog;
         private System.Windows.Forms.TextBox MSongFileTextBox;
         private System.Windows.Forms.Button MSongPlayButton;
-        private System.Windows.Forms.RadioButton radioButton1;
-        private System.Windows.Forms.RadioButton radioButton2;
+        private System.Windows.Forms.ComboBox MidiDeviceComboBox;
+        private System.Windows.Forms.Label label2;
     }
 }
 
